@@ -3,8 +3,9 @@
     "",
     "\\Time_In",
     "\\Time_In\\Time_In",
-    "\\Time_In\\Time_In\\Controllers"
+    "\\Time_In\\Time_In\\Views",
+    "\\Time_In\\Time_In\\Views\\Home"
   ],
-  "SelectedNode": "\\Time_In\\Time_In\\bin",
+  "SelectedNode": "\\Time_In\\Time_In.sln",
   "PreviewInSolutionExplorer": false
 }
