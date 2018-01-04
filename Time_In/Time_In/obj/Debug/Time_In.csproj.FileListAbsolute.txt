@@ -74,3 +74,4 @@ C:\Users\Bar\Desktop\Time_In\Time_In\Time_In\obj\Debug\Time_In.dll
 C:\Users\Bar\Desktop\Time_In\Time_In\Time_In\obj\Debug\Time_In.pdb
 C:\Users\Bar\Desktop\Time_In\Time_In\Time_In\obj\Debug\Time_In.Migrations.init.resources
 C:\Users\Bar\Desktop\Time_In\Time_In\Time_In\obj\Debug\Time_In.csproj.GenerateResource.Cache
+C:\Users\Bar\Desktop\Time_In\Time_In\Time_In\obj\Debug\Time_In.csprojResolveAssemblyReference.cache
