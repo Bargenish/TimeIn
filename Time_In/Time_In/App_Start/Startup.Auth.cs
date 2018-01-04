@@ -60,8 +60,8 @@ namespace Time_In
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
-                ClientId = "762547322992-3iadqjcjkm69q5bcr2dt0ic8acd4noe7.apps.googleusercontent.com",
-                ClientSecret = "Yu8Wii78dKQkbzB4n24MXUhh"
+                ClientId = MyClientID.ClientId,
+                ClientSecret = MyClientID.ClientSecret
             });
         }
     }
