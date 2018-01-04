@@ -1,57 +1,110 @@
-﻿@model IEnumerable<Time_In.Models.Business>
+﻿<!DOCTYPE html>
+<html lang="en">
 
-@{
-    ViewBag.Title = "Index";
-}
+  <head>
 
-<h2>Index</h2>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.googleUser)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.businessName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.demandApproval)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.beginHour)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.endHour)
-        </th>
-        <th></th>
-    </tr>
+    <title>Resume - Start Bootstrap Theme</title>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.googleUser)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.businessName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.demandApproval)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.beginHour)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.endHour)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
+    <!-- Bootstrap core CSS -->
+    <link href="~/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-</table>
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="~/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="~/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="~/css/resume.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand" href="#page-top">
+        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="~/img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">אודות העסק</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">חוות דעת</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">צור קשר</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flexn" id="about">
+        <div class="my-auto">
+          <h1 class="mb-3">גניש
+            <span class="text-primary">שפם</span>
+          </h1>
+            <div class="subheading mb-3">
+                <a href="mailto:name@email.com">genishbar@gmail.com | </a> 
+                שינקין 56 · גבעתיים · ישראל
+            </div>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>       
+          </ul>
+        </div>
+      </section>
+
+        <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="">
+        <div class="my-auto">
+          <h2 class="mb-5">קביעת תור</h2>
+            <div class="col-md-3" style="font-size: 12px; text-align: right">
+                שירות
+            </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="~/js/resume.min.js"></script>
+
+  </body>
+
+</html>
