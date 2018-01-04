@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Time_In.Models.Business>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.googleUser)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.businessName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.demandApproval)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.beginHour)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.endHour)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.googleUser)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.businessName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.demandApproval)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.beginHour)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.endHour)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
