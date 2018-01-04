@@ -30,5 +30,9 @@ namespace Time_In.Models
         [Display(Name = "Ending Hour")]
         public DateTime endHour { get; set; }
 
+
+        public Calendar calendar { get; set; }
+
+        
     }
 }
