@@ -58,11 +58,11 @@ namespace Time_In
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = MyClientID.ClientId,
+                ClientSecret = MyClientID.ClientSecret
+            });
         }
     }
 }
